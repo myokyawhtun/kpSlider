@@ -7,7 +7,31 @@
 		
 	</head>
 	<body>
-		
+		<div id="products">
+			<div class="item">
+				<p>Product Item 1</p>
+			</div>
+			<div class="item">
+				<p>Product Item 2</p>
+			</div>
+			<div class="item">
+				<p>Product Item 3</p>
+			</div>
+			<div class="item">
+				<p>Product Item 4</p>
+			</div>
+			<div class="item">
+				<p>Product Item 5</p>
+			</div>
+
+		</div>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="jquery.kpslider.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$('#products').kpSlider();
+			});
+		</script>
 	</body>
 </html>
