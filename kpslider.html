@@ -8,6 +8,7 @@
 	</head>
 	<body>
 		<div id="wrapper">
+			<h3>As Products listing</h3>
 			<div id="products">
 				<div class="item">
 					<p>Product Item 1</p>
@@ -25,13 +26,35 @@
 					<p>Product Item 5</p>
 				</div>
 			</div>
+			<h3>Or as a image gallery</h3>
+			<div id="gallery">
+				<div class="item">
+					<img src="images/desert.jpg" alt="Desert"/>
+				</div>
+				<div class="item">
+					<img src="images/koala.jpg" alt="Koala"/>
+				</div>
+				<div class="item">
+					<img src="images/jellyfish.jpg" alt="Jellyfish"/>
+				</div>
+				<div class="item">
+					<img src="images/penguins.jpg" alt="Penguins"/>
+				</div>
+				<div class="item">
+					<img src="images/tulips.jpg" alt="Tulips"/>
+				</div>
+			</div>
 		</div>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="jquery.kpslider.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-
-				$('#products').kpSlider({showPrevNext: true, displayItems:1, showBullets: false});
+				$("#products").kpSlider();
+				$('#gallery').kpSlider({
+					showPrevNext: true, 
+					displayItems:1, 
+					showBullets: false
+				});
 			});
 		</script>
 	</body>

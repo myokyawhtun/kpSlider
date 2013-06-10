@@ -17,6 +17,17 @@ body{
 	height:200px;
 	padding:10px;
 }
+#gallery {
+	height:450px;
+}
+#gallery .item{
+	width:600px;
+}
+#gallery .item img{
+	width: 600px;
+	height: auto;
+	vertical-align: top;
+}
 
 .navSlider a{
 	text-indent: -1000px;
@@ -31,10 +42,28 @@ body{
 	position: absolute;
 	top:50%;
 	z-index: 1000;
+	margin-top: -25px;
 }
 .navNext {
 	position: absolute;
 	top: 50%;
 	right:0;
 	z-index: 1000;
+	margin-top: -25px;
+}
+
+.navNext a, .navPrev a{
+	display: block;
+	overflow: hidden;
+	width:50px;
+	height:50px;
+	text-indent: -1000px;
+}
+
+.navPrev a{
+	background: url(arrow_left.png) left top no-repeat;
+}
+
+.navNext a{
+	background: url(arrow_right.png) left top no-repeat;
 }
