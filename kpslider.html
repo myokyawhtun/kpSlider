@@ -4,33 +4,34 @@
 		<title>kpSlide jQuery plugin sample</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" type="text/css" href="kpslider.css" />
-		
+		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<div id="products">
-			<div class="item">
-				<p>Product Item 1</p>
+		<div id="wrapper">
+			<div id="products">
+				<div class="item">
+					<p>Product Item 1</p>
+				</div>
+				<div class="item">
+					<p>Product Item 2</p>
+				</div>
+				<div class="item">
+					<p>Product Item 3</p>
+				</div>
+				<div class="item">
+					<p>Product Item 4</p>
+				</div>
+				<div class="item">
+					<p>Product Item 5</p>
+				</div>
 			</div>
-			<div class="item">
-				<p>Product Item 2</p>
-			</div>
-			<div class="item">
-				<p>Product Item 3</p>
-			</div>
-			<div class="item">
-				<p>Product Item 4</p>
-			</div>
-			<div class="item">
-				<p>Product Item 5</p>
-			</div>
-
 		</div>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="jquery.kpslider.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 
-				$('#products').kpSlider();
+				$('#products').kpSlider({showPrevNext: true, displayItems:1, showBullets: false});
 			});
 		</script>
 	</body>

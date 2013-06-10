@@ -1,0 +1,40 @@
+
+body{
+	background: #efefef;
+}
+#wrapper{
+	width:600px;
+	margin: 100px auto;
+	background: #fff;
+	border:1px solid #ddd;
+	padding:20px;
+}
+#products .item{
+	width:150px;
+}
+
+#products {
+	height:200px;
+	padding:10px;
+}
+
+.navSlider a{
+	text-indent: -1000px;
+	display: block;
+	width:32px;
+	height:32px;
+	overflow: hidden;
+	background: url(bullet_blue.png) left top no-repeat;
+}
+
+.navPrev {
+	position: absolute;
+	top:50%;
+	z-index: 1000;
+}
+.navNext {
+	position: absolute;
+	top: 50%;
+	right:0;
+	z-index: 1000;
+}

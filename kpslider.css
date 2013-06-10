@@ -1,8 +1,13 @@
+/* kpSlider default css */
 
-#products .item{
-	width:150px;
+.navSlider{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
 }
+.navSlider li{
+	display: inline;
+	display: inline-block;
+	margin-right: 5px;
 
-#products {
-	height:200px;
 }
