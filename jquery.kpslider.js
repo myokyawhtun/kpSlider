@@ -60,6 +60,9 @@
 				anc.attr('href','#');
 				anc.attr('rel', (b-1)* numItems );
 				anc.addClass('bullet'); // add Class for handler
+				if(b==1){
+					anc.addClass('current');
+				}
 				anc.append(b);
 				li.append(anc);
 				ulBullet.append(li);		// append in ul
@@ -100,6 +103,9 @@
 				currentItem = total-1;
 			}
 
+			parent.find('.bullet').removeClass('current');
+			$(this).addClass('current');
+
 			moveItems(currentItem);
 		});
 
@@ -110,6 +116,10 @@
 			var rel = $(this).attr('rel');
 
 			currentItem = rel;
+			
+			parent.find('.bullet').removeClass('current');
+
+			$(this).addClass('current');
 
 			moveItems(currentItem);
 		});
